@@ -1,0 +1,73 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Se omitió el valor devuelto: '_getch'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/FABIAN/source/repos/MATEDISCRETA/MATEDISCRETA/MATEDISCRETA.cpp"
+                },
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 9,
+                  "endLine": 112,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "main",
+                  "decoratedName": "?main@@$$HYAHXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/FABIAN/source/repos/MATEDISCRETA/MATEDISCRETA/MATEDISCRETA.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b12f9b4553bc3c5331bfb6ca29a5556b58eae0a2288d4a485d5ec645fe70133a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/fabian/source/repos/matediscreta/matediscreta/pch.h"
+          },
+          "hashes": {
+            "sha-256": "4ef348acf6dc45425a4ced9a01d4e4599c810f2a39e936a659a436242c88a6ca"
+          }
+        }
+      ]
+    }
+  ]
+}
